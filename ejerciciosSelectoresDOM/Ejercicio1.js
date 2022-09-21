@@ -9,10 +9,16 @@ mostrar por pantalla la siguiente información:
 */
 
 let links = document.querySelectorAll("a");
-document.write(`Número de enlaces de la página: ${links.length}`);
+document.write(`Número de enlaces de la página: ${links.length} <br>`);
 
-let nextLastLink = links[5];
-document.write(`Dirección a la que enlaza el penúltimo enlace: ${nextLas}`)
+let nextLastLink = document.querySelector("p:last-of-type a:nth-last-Child(2)");
+document.write(`Dirección a la que enlaza el penúltimo enlace: ${nextLastLink} <br>`);
 
-console.log(nextLastLink)
+let pruebaLink = document.querySelectorAll("[href='http://prueba']");
+document.write(`Número de enlaces que enlazan a http://prueba: ${pruebaLink.length} <br>`);
+
+let lastParrLinks = document.querySelectorAll("p:nth-child(3) a");
+document.write(`Número de enlaces del tercer párrafo: ${lastParrLinks.length} <br>`); 
+
+
 
