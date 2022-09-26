@@ -44,17 +44,20 @@ function keyUnpush(tecla){
     console.log(`Has soltado la tecla ${tecla.value}`);
 }
 
-
 botonEnviar.addEventListener('click', consolePrint);
 
 function consolePrint(event){
     event.preventDefault();
     let texto = document.getElementById("formIn");
-    console.log("texto");
+    console.log(texto.value);
 }
 
-// tecla.addEventListener('keyup', Event => {keyUnpush(tecla)});
-// function keyInput(texto){
-//     let valor = texto.value;
-//     console.log(valor);
+//botonEnviar.addEventListener('click', consolePrint2);
+
+// function consolePrint2(event){
+//     event.preventDefault();
+//     let texto = document.getElementById("formIn");
+//     texto.oninput = function(){
+//         console.log(texto.value);
+//     }
 // }

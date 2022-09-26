@@ -6,19 +6,28 @@ una vez seleccionados modifica alguna propiedad CSS.
 
 //a - Selecciona todos los módulos de primero
 let modulosPri = document.querySelector( "p + ul");
+ let ref = modulosPri.querySelectorAll("a");
+for(let i=0; i< ref.length; i++){
+    ref[i].style.color = "green";
+}
 console.log(modulosPri);
 
 //b - Selecciona el módulo Sistemas Informáticos
 let sistemas = document.querySelector("[href= 'SImod.html']");
+sistemas.style.color = "purple";
 console.log(sistemas);
 
 //c - Selecciona el módulo que va detrás de Sistemas Informáticos
 let nextModulo = document.querySelector("ul li:nth-of-type(4)");
+nextModulo.style.fontSize = "1.5em";
 //let nextModulo1 = modulosPri.querySelector("li:nth-of-type(4)");
 console.log(nextModulo);
 
 //d - Selecciona los módulos que van detrás de Sistemas Informáticos
 let modulos = modulosPri.querySelectorAll("li:nth-of-type(1n+4)");
+for (let j= 0; j <modulos.length; j++){
+    modulos[j].style.color = "blue";
+}
 console.log(modulos);
 
 //e - Selecciona los módulos que tengan el atributo href
