@@ -75,3 +75,11 @@ Actividad 5: Revisa la documentación del objeto screen
 https://developer.mozilla.org/es/docs/Web/API/Screen 
 y busca al menos 3 ejemplos útiles que puedas realizar con este objeto.
 */
+
+console.log(screen.availHeight);
+console.log(screen.availWidth);
+console.log(screen.width);
+console.log(screen.colorDepth);
+
+
+
