@@ -1,6 +1,6 @@
 let box = document.getElementById('box');
 let tecla = document. getElementById('textIn');
-let botonEnviar = document.getElementById('formButton'); 
+
 
 box.addEventListener('mouseenter', colorChangeIn);
 box.addEventListener('mouseleave', colorChangeOut);
@@ -44,6 +44,8 @@ function keyUnpush(tecla){
     console.log(`Has soltado la tecla ${tecla.value}`);
 }
 
+
+let botonEnviar = document.getElementById('formButton'); 
 botonEnviar.addEventListener('click', consolePrint);
 
 function consolePrint(event){

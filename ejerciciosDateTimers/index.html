@@ -7,11 +7,27 @@
     <title>Dates and Timers</title>
 </head>
 <body>
+    <h2>Ejercicio 1</h2>
+    <form action="">
+       
+        <label for="today">Fecha </label>
+        <input id="today" type="datetime-local">
+    </form>
+
+    <h2>Ejercicio 2</h2>
 
     <form action="">
-        <label for="today">Fecha </label>
-        <input id="today" type="date">
+        <label for="monthLabel">Introduce un mes: </label>
+        <input id="monthInput" type="number" min="1" max="12">
+
+        <label for="yearLabel" placeholder="yyyy">Introduce el año: </label>
+        <input id="yearInput" type="number" minlength="4">
+
+        <button id="showCalendar">Obtener calendario</button>
+
     </form>
+
+ 
 </body>
 <script src="index.js"></script>
 </html>
