@@ -13,21 +13,51 @@
         <label for="today">Fecha </label>
         <input id="today" type="datetime-local">
     </form>
+    <br>
 
     <h2>Ejercicio 2</h2>
-
     <form action="">
         <label for="monthLabel">Introduce un mes: </label>
         <input id="monthInput" type="number" min="1" max="12">
 
         <label for="yearLabel" placeholder="yyyy">Introduce el año: </label>
-        <input id="yearInput" type="number" minlength="4">
+        <input id="yearInput" type="number" minlength="4" min="1800">
 
         <button id="showCalendar">Obtener calendario</button>
-
     </form>
+    <div id="outPut2">
+    </div>
+    <br>
 
- 
+    <h2>Ejercicio 3</h2>
+    <form action="">
+        <label for="inputDate">Introduce la Fecha: </label>
+        <input id="inputDate" type="datetime-local">
+
+        <label for="delayDays">Introduce los días de retraso: </label>
+        <input id="delayDays" type="number">
+        <button id="requestPayment">Obtener fecha de pago</button>
+    </form>
+    <div id="outPut3">
+    </div>
+    <br>
+
+    <h2>Ejercicio 4</h2>
+    <button id="stopChrono">Stop</button>
+    <div id="outPut4">
+    </div>
+    <br>
+    <h2>Ejercicio 5</h2>
+    <div id="alarm">
+    </div>
+    <label for="alarmOn">Introduce la hora de alarma: </label>
+    <input id="alarmOn" type="time">
+    <div id="outPut5">
+        <button id="postpone" style="display: none;">Posponer</button>
+        <button id="stop" style="display: none;">Detener</button>
+    </div>
+    <br>
+    
 </body>
 <script src="index.js"></script>
 </html>
