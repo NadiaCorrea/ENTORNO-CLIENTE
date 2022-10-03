@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Nombre: </label>
+        <input type="text" id="name"  minlength="2" maxlength="20" required>
+        <label for="lastName">Apellidos: </label>
+        <input type="text" id="lastName" minlength="3" maxlength="30" required>
+        <label for="dateOfBirth" required>Fecha de nacimiento: </label>
+        <input type="date">
+        <label for="email">E-mail: </label>
+        <input type="email" id="mail" required>
+        <label for="age">Edad: </label>
+        <input type="number" id="age" required min="18" max="99">
+        <label for="sex"></label>
+        <input type="checkbox" id="sex" value="female"> Mujer
+        <input type="checkbox" id="sex" value="male"> Hombre
+        <input type="checkbox" id="sex" value="other"> Other
+
+        <button id="send" >Enviar</button>
+
+
+
+
+
+    </form>
+
+</body>
+<script src="formularios.js"></script>
+</html>
