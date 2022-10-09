@@ -8,26 +8,43 @@
     <link rel="stylesheet" href="formulario2.css">
 </head>
 <body>
-    <form action="" name="form2">
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name">
-        <label for="lastName">Apellidos: </label>
-        <input type="text" id="lastName" name="lastName">
-        <label for="dateOfBirth">Fecha de nacimiento: </label>
-        <input type="date" name="dateOfBirth">
-        <label for="email">E-mail: </label>
-        <input type="email" id="mail" name="email">
-        <label for="age">Edad: </label>
-        <input type="number" id="age" name="age">
-        <label for="sex"></label>
-        <input type="radio" name="sex" value="female"> Mujer
-        <input type="radio" name="sex"  value="male"> Hombre
-        <input type="radio" name="sex"  value="other"> Other
-
-        <button id="send" name="send">Enviar</button>
-
+    <form action="" id="form2" name="form2">
+        <div class="form-field">
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" name="name">
+            <small></small>
+        </div>
+        <div class="form-field">
+            <label for="lastName">Apellidos: </label>
+            <input type="text" id="lastName" name="lastName">
+            <small></small>
+        </div>
+        <div class="form-field">
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email">
+            <small></small>
+        </div>
+        <div class="form-field">
+            <label for="age">Edad: </label>
+            <input type="number" id="age" name="age">
+            <small></small>
+        </div>
+        <div class="form-field">
+            <label for="sex"></label>
+            <input type="radio" id="sexMujer" name="sex" value="female"> Mujer
+            <input type="radio" id="sexHombre" name="sex" value="male"> Hombre
+            <input type="radio" id="sexOther"  name="sex" value="other"> Other
+            <small></small>
+        </div>
+        <div class="form-field">
+            <input type="checkbox" id="terms" name="terms">Acepto los términos y condiciones 
+            <small></small>
+        </div>
+        <div class="form-field">
+            <button id="send" name="send">Enviar</button>
+        </div>
     </form>
 
 </body>
-<script src="formularios2.js"></script>
+<script src="formulario2.js"></script>
 </html>

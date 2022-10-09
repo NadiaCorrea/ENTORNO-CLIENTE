@@ -19,7 +19,7 @@ function validateAge(Event){
     if(formAge.validity.rangeUnderflow){
         formAge.setCustomValidity("No se permite el registro a menores de 18 años.");
     }else if( formAge.validity.rangeOverflow){
-        formAge.setCustomValidity("La edad no puede superar los 99 años.");
+        formAge.setCustomValidity("La edad no puede superar los 150 años.");
     }else {
         formAge.setCustomValidity("");
       }
